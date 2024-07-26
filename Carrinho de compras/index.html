@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Produtos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Catálogo</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="carrinho.html" id="iconeCarrinho">🛒 (0)</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar produtos...">
+      <button onclick="buscarProdutos()">Buscar</button>
+    </div>
+  </header>
+  <main>
+    <h1>Catálogo de Produtos</h1>
+    <div id="produtos" class="grid-container">
+      <!-- Produtos serão carregados aqui -->
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
